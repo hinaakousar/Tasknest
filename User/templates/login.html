@@ -6,13 +6,10 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="{% url 'Signin' %}" method="post">
+    <form action="SignInForm" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
+        {{form}}
         <button type="submit">Submit</button>
     </form>
-
-        <h1>You are logged in</h1>
-    {% endif %}
 </body>
 </html>

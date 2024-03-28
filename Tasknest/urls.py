@@ -22,5 +22,5 @@ from Tasknest.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('User/',include('User.urls')),
-    path('home/', home.as_view())
+    path('Home/', include('List.urls')),
 ]
