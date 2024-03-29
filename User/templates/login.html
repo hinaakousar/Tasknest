@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="SignInForm" method="post">
+    <form action="SignInForm" method="POST">
         {% csrf_token %}
         {{form}}
         <button type="submit">Submit</button>
