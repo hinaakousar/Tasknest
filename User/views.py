@@ -40,3 +40,4 @@ class SignInView(TemplateView):
     def get(self ,request):
         form = SignInForm()
         return render(request,'login.html', {'form': form})
+#This is a comment
